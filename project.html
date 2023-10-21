@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Harflex Autos</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: rgb(255, 255, 255);
+            height: 200vh;
+            padding: 30px 30px 30px 30px;
+            width: 1300px; */
+        }
+
+        header {
+            font-size: 30px;
+            color: beige;
+
+        }
+
+        .nav {
+            margin-left: 400px;
+            margin-top: 10px;
+        }
+
+        .one,
+        .two,
+        .three,
+        .four,.five {
+            text-decoration: none;
+            padding: 10px 10px 10px 10px;
+            margin-top: -10px;
+            color: white;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        #home {
+            background-image: url(./Harflex.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1600px;
+        }
+
+        #img1 {
+            background-color: rgb(19, 140, 140);
+            border-radius: 40%;
+            /* margin-top: -15px; */
+        }
+
+        .Start {
+            font-size: 1px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .fa-car {
+            color: white;
+            font-size: xx-large;
+        }
+
+        .container {
+            background-color: rgb(0, 0, 255);
+            width: 100%;
+            display: flex;
+            padding: 20px 20px 20px 20px;
+            position: static;
+        }
+
+        .lux {
+            font-size: 30px;
+            color: #000000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bolder;
+            font-style: oblique;
+            margin-top: 600px;
+            margin-left: 10px;
+        }
+        .lux2{
+            border-radius: 50%;
+            text-align: center;
+            margin-top: -250px;
+            margin-right: 900px;
+            font-size: 40px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-emphasis-style: 30px;
+        }
+
+        #summary {
+            margin-top: 30px;
+            color: black;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url(./fe5.jpg);
+
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        .container2{
+            background-size: cover;
+            display: flex;
+            background-color: white;
+            text-decoration: none;
+            display: inline-flex;
+            color: white;
+            font-size: 30px;
+        }
+        .text{
+            text-decoration: none;
+            padding: 30px 30px 30px 30px;
+            color: rgb(20, 20, 20);
+        }
+        .fish{
+            color: white;
+            background-color: black;
+        }
+        #service{
+            background-color: #1a05fc;
+            height: 100vh;
+            width: 1500px;
+        }
+        .container3{
+            display: flex;
+            margin-top: 20px;
+            background-color: #178bbd;
+        }
+        .Moto1{
+            background-color:  skyblue;
+            margin-left: 20px;
+            width: 600px;
+            height: 200px;
+            padding: 20px 20px 20px 20px;
+        }
+        .imgg1{
+            margin-top: 20px;
+            height: 140px;
+            width: 200px;
+        }
+        .oko{
+            font-style: oblique;
+            margin-left: 210px;
+            margin-top: -140px;
+            padding: 5px 5px 5px 5px;
+        }
+        .oko1{
+            margin-left: 215px;
+        }
+        button{
+            color: white;
+            background-color: red;
+            border-radius: 10%;
+        }
+        .Button3{
+            background-color: #1a05fc;
+            margin-left: 1180px;
+            margin-top: -10px;
+            margin-right: 50px;
+            font-size: 20px;
+            padding: 20px 20px 20px 20px;
+        }
+        .Button3div{
+            background-color: #1a05fc;
+            border-radius: 50%;
+        }
+        .view{
+            margin-left: 90px;
+           color: white;
+           background-color: black;
+           text-decoration: none;
+        }
+        .Des{
+            margin-left: 200px;
+        }
+        .Another{
+            margin-left: 5px;
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            padding: 20px 20px 20px 20px;
+        }
+        .ABC{
+            text-align: center;
+        }
+        .moto2{
+            display: flex;
+            background-color: skyblue;
+            margin-left: 20px;
+            width: 300px;
+            height: 200px;
+            margin-right: 10px;
+            padding: 30px 30px 30px 30px;
+        }
+        .Button1{
+            margin-left: 20px;
+            font-size: 30px;
+            margin-top: 55px;
+        }
+        #about{
+            background-color: #b7e4f7;
+            margin-top: 1100px;
+            width: 1500px;
+        }
+        .container4{
+            display: flex;
+        }
+        .abouttext{
+            text-align: center;
+            margin-left: 500px;
+            font-style: oblique;
+            text-decoration: underline;
+        }
+        .aboutimg{
+            height: 630px;
+            margin-top: -535px;
+        }
+        .abouttext2{
+            text-align: center;
+            margin-left: 500px;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .bothp{
+            display: inline-block;
+        }
+        #Display{
+            width: 1000px;
+            width: 1500px;
+        }
+        .texttt{
+            width: 1350px;
+
+        }
+        #contact{
+            margin-top: 140px;
+            background-color: wheat;
+            width: 1300px;
+        }
+
+        .bobo1{
+            margin-top: -500px;
+            margin-left: 200px;
+            margin-bottom: -250px;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+            border-radius: 50%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .TEXT{
+            margin-top: 400PX;
+            margin-left: 80px;
+            font-style: oblique;
+        }
+        .TEXT1{
+            margin-top: 20px;
+            margin-left: -900px;
+            text-align: center;
+        }
+        .social{
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 20px 20px 20px;
+        }
+        .fa-whatsapp{
+            /* color: #25d366; */
+            padding: 20px;
+        }
+        .fa-facebook{
+            /* color: #3b5998; */
+            padding: 20px;
+        }
+        .fa-twitter{
+            /* color: #00acee; */
+            padding: 20px;
+        }
+        .fa-instagram{
+            /* background: linear-gradient(  #feda75,#fa7e1e, #d62976,  #962fbf,  #4f5bd5); */
+            padding: 20px;
+        }
+        .contactme{
+            margin-left: 600px;
+            width: 800px;
+            background-color: rgb(241, 239, 243);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .inpt{
+            margin-left: 700px;
+            padding: 20px 20px 10px 20px;
+            width: 400px;
+        }
+        #But{
+            font-size: 10px;
+            margin-right: 40px;
+            margin-top: 30px;
+            background-color: wheat;
+        }
+        #foot{
+            margin-top: 20px;
+            background-color: #fdfcff;
+            height: 30px;
+            width: 1500px;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 10px;
+        }
+   
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <i class="fa-solid fa-car"></i>
+        <header>Harflex Autos</header>
+        <nav>
+            <ul class="nav">
+                <a href="#home" class="one">HOME</a>
+                <a href="#summary" class="five">SUMMARY</a>
+                <a href="#service" class="four">SERVICE</a>
+                <a href="#about" class="two">ABOUT</a>
+                <a href="#contact" class="three">CONTACT</a>
+            </ul>
+        </nav>
+    </div>
+    <section id="home">
+        <h1 class="Start"> Welcome.</h1>
+        <h2 class="lux">Best Luxury Large Cars for 2023--->>>>>></h2>
+        <h2 class="lux2">Imagine Buying a Car and<br>Loving Every Minute of it?</h2>
+        <div><Button class="Button3">Get Started</Button></div>
+    </section>
+    <section id="summary">
+        <h2 class="fish"><<<<<<<<<<<<<--------Best Luxury Large Cars for 2023--------->>>>>>>>>>>>>></h2>
+           <div class="container2">
+             <ol>
+                 <li><a href="#" class="text">2023 Genesis G90</a></li>
+                 <li><a href="#" class="text">2023 Audi A7</a></li>
+                 <li><a href="#" class="text">2023 Mercedes-Benz S-Class</a></li>
+                 <li><a href="#" class="text">2023 BMW 7-Series</a></li>
+                 <li><a href="#" class="text">2023 Porsche Panamera</a></li>
+                 <li><a href="#" class="text">2023 Audi A8</a></li>
+                 <li><a href="#" class="text">2023 Mercedes-Benz CLS-Class</a></li>
+                 <li><a href="#" class="text">2023 Lexus LS</a></li>
+             </ol>
+            </div> 
+    </section>
+    <section id="service"> 
+        <div class="container3">
+            <div class="Moto1"><img src="./Bus1.jpg" class="imgg1"><h1 class="oko">2023 Genesis G90</h1><h4><a href="./Bus1.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The completely redesigned 2023 Genesis G90 fully commits to its luxury mission, with potent engine options, a classy and high-quality.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">9.3</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$88,400 - $98,700</h2><h6 class="ABC">MPG</h6><h2 class="ABC">17-18 City / 24-26</h2><h3 class="ABC">Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="Moto1"><img src="./Bus2.jpg" class="imgg1"><h1 class="oko">2023 Audi A7</h1><h4><a href="./Bus2.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 Audi A7 melds performance prowess with all the luxury and panache of a brand's flagship car, and it does so at a relative value.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">9.0</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$70,200</h2><h6 class="ABC">MPG</h6><h2 class="ABC">21 City / 30</h2><h3 class="ABC">Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="Moto1"><img src="./Bus3.jpg" class="imgg1"><h1 class="oko">2023 Mercedes-Benz S-Class</h1><h4><a href="./Bus3.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 Mercedes-Benz S-Class offers a sumptuous cabin, pampering seating, a long list of advanced features, high-tech driving aids</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">8.9</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$114,500 - $229,000 </h2><h6 class="ABC">MPG</h6><h2 class="ABC">12-20 City / 21-28</h2><h3 class="ABC">Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="Moto1"><img src="./Bus4.jpg" class="imgg1"><h1 class="oko">2023 BMW 7-Series</h1><h4><a href="./Bus4.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 BMW 7 Series is improved across the board in comparison to its already-excellent predecessor.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">8.8</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">17-22 City / 27-29</h2><h6 class="ABC">MPG</h6><h2 class="ABC">17-18 City / 24-26</h2><h3 class="ABC">Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="Moto1"><img src="./Bus5.jpg" class="imgg1"><h1 class="oko">2023 Porsche Panamera</h1><h4><a href="./Bus5.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 Porsche Panamera blends practicality, performance and luxury in a way that few other cars do, but you'll pay a pretty penny for.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">8.4</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$92,400 - $206,800 </h2><h6 class="ABC">MPG</h6><h2 class="ABC">15-18 City / 20-24</h2><h3 class="ABC">Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+          <div class="container3">
+            <div class="Moto1"><img src="./Bus6.jpg" class="imgg1"><h1 class="oko">2023 Audi A8</h1><h4><a href="./Bus6.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 Audi A8 isn't a class leader, but it remains a viable option for those seeking well-rounded luxury and capable performance.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">8.0</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$87,800 </h2><h6 class="ABC">MPG</h6><h2 class="ABC">19-City</h2><h3 class="ABC">28Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="Moto1"><img src="./Bus7.jpg" class="imgg1"><h1 class="oko">2023 Mercedes-Benz CLS-Class</h1><h4><a href="./Bus7.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 Mercedes-Benz CLS offers a potent and silky-smooth engine, a gorgeous, tech-laden interior and a gentle ride in a sleek package.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">7.5</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$75,500 </h2><h6 class="ABC">MPG</h6><h2 class="ABC">22-City</h2><h3 class="ABC">30Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="Moto1"><img src="./bus8.jpg" class="imgg1"><h1 class="oko">2023 Mercedes-Benz CLS-Class</h1><h4><a href="./bus8.jpg" class="view">View Photo</a></h4><input type="text" placeholder="Zip code" class="oko1"><button>Find The Best Price</button><p class="Des">The 2023 Lexus LS fails to make a splash in a competitive class where it goes up against the best that luxury brands have to offer.</p></div>
+            <div class="Another"><h6 class="ABC">Score</h6><h3 class="ABC">7.3</h3><br><br><h6 class="ABC">MSRP</h6><h2 class="ABC">$76,885 - $112,785 </h2><h6 class="ABC">MPG</h6><h2 class="ABC">17-22 City / 27-29</h2><h3 class="ABC">30Hwy</h3></div>
+            <div class="moto2">
+                <div><h1><i>Have You Seen Your Choice?</i></h1><br><br><Button class="Button1">Purchase Now</Button></div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div container4>
+            <h1 class="abouttext">About me</h1>
+        <div class="bothp">
+            <p class="abouttext2">Hello there, I'm thrilled to connect with you! Welcome to our car dealership, where your dream of owning the
+                perfect vehicle becomes a reality. <br>
+                My name is Harflex Autos, and I'm your trusted automotive expert. With years of experience in the industry,
+                I'm passionate about helping you find the ideal car that suits your needs and desire. <br>
+                we believe in providing exceptional customer service from start to finish. Our team is dedicated to ensuring
+                your car-buying journey is seamless and enjoyable.fc</p>
+        </div>     
+            <img src="./free.jpeg" class="aboutimg">
+        </div>
+    </section>
+    <section id="Display">
+        <img src="./Afeez1.PNG" class="texttt">
+    </section>
+    <section id="contact">
+        <section class="bobo">
+                <h1 class="contactme">Contact Me</h1>
+                <form>
+                    <input type="text" placeholder="Your Full Name" class="inpt"><br><br>
+                    <input type="text" placeholder="Email" class="inpt"><br><br>
+                    <input type="text" placeholder="Phone No" class="inpt"><br><br>
+                    <input type="text" placeholder="Adress" class="inpt"><br><br>
+                    <textarea cols="30" rows="10" class="inpt" placeholder="Write Something"></textarea><br><br>
+                    <button class="inpt"> SEND MESSAGE</button>
+                </form>
+            <div class="bobo1"><h1>Harflex Autos</h1></div><br><br><h1 class="TEXT">YOU CAN <span>CONTACT</span> DIRECTLY AT:</h1>
+            <h4 class="TEXT1">Contact@ismailafeez080.gmail.com</h4>
+            <h4 class="TEXT1">Or you can write me via the contact form <br>I answer as quick as possible</h4><br><br><br><br></div>
+            <div class="social">
+                <button id="But"><i class="fa-brands fa-whatsapp"></i></button>
+                <button id="But"><i class="fa-brands fa-facebook"></i></button>
+                <button id="But"><i class="fa-brands fa-twitter"></i></button>
+                <button id="But"><i class="fa-brands fa-instagram"></i></button>
+            </div>
+        </section>
+    </section>
+    <section id="foot">
+        <h6>@copyright 2023 By Ismaila afeez</h6>
+    </section>
+</body>
+
+</html>
