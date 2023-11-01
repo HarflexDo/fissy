@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+            padding: 2%;
+            font-weight: 900;
+        }
+
+        nav {
+            /* background-color: black; */
+            position: fixed;
+            width: 100%;
+        }
+
+        body {
+            width: 100%;
+            background-color: black;
+        }
+
+        nav ul {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        nav ul a:hover {
+            background-color: rgb(57, 57, 57);
+            flex-wrap: wrap;
+        }
+
+        /* home section */
+        #home {
+            height: 135vh;
+            width: 100%;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            /* animation-name: afeez; */
+        }
+
+        @keyframes afeez {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color: yellow;
+            }
+
+            100% {
+                background-color: orange;
+            }
+        }
+
+        .one {
+            height: 420px;
+            width: 400px;
+
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+
+        .one:first-child {
+            margin-top: 50px;
+        }
+
+        .one:last-child {
+            margin-top: 70px;
+        }
+
+        .first {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            color: orange;
+            margin-top: 140px;
+        }
+
+        .first::after {
+            content: "Ismaila Afeez";
+            color: orange;
+        }
+
+        .wrt {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            color: orange;
+            flex-wrap: wrap;
+        }
+
+        .HH {
+            margin-top: 109px;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: orange;
+            color: wheat;
+        }
+
+        .HH:hover {
+            color: rgb(255, 255, 255);
+
+        }
+
+        span {
+            font-style: oblique;
+        }
+
+        .im2 {
+            margin-top: 80px;
+            height: 400px;
+            width: 200px;
+            padding: 20px 20px 20px 20px;
+
+        }
+
+        /* about page */
+        #about {
+            height: 90vh;
+            width: 100%;
+        }
+        .tet{
+           padding: 0% 10%;
+        }
+
+        .two {
+            height: 400px;
+            width: 500px;
+            background-color: rgb(18, 15, 15);
+        }
+
+        .two:first-child {
+            margin-top: 170px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .two:last-child {
+            margin-top: 180px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .tet {
+            text-align: center;
+            font-weight: 900;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+            text-transform: uppercase;
+            text-align: justify;
+        }
+
+        .para {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+        }
+
+        /* service section */
+        #service {
+            margin-top: 270px;
+            height: 80vh;
+            width: 100%;
+        }
+
+        .three {
+            height: 280px;
+            width: 400px;
+            background-color: rgb(18, 15, 15);
+            text-align: center;
+            font-size: 2rem;
+            color: orange;
+            border-bottom-left-radius: 30px;
+        }
+
+        .three:last-child {
+            border-top-right-radius: 30px;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .tt1 {
+            margin-top: 100px;
+        }
+
+        /* work section */
+        #work {
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            margin-top: 170px;
+        }
+
+        .four {
+            margin-top: 120px;
+            height: 300px;
+            width: 300px;
+            background-image: url(./work-2.jpg);
+            background-size: cover;
+            overflow-y: hidden;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            color: orange;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+        }
+
+        .for {
+            height: 100%;
+            width: 100%;
+            transform: translateY(100%);
+            transition: 2s ease-in-out;
+        }
+
+        .four:hover .for {
+            transform: translateY(0);
+        }
+
+        .four:first-child {
+            margin-top: 120px;
+        }
+
+        .container4 {
+            margin-top: -120px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .tr {
+            align-items: center;
+            font-size: 2rem;
+            color: orange;
+            text-decoration: underline;
+        }
+        /* portfolio section */
+        #portfolio{
+            margin-top: 40px;
+            height: 60vh;
+        }
+        .container7{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .seven{
+            width: 500px;
+            height: 400px;
+            background-color: red;
+        }
+        @media screen (max-width:565px) {
+            .container7{
+                margin-top:140px;
+            }
+        }
+        /* contact section */
+        #contact{
+            width: 100%;
+            height: 100vh;
+        }
+        .five{
+            height: 400px;
+            width: 400px;
+        }
+
+        .container5{
+            margin-top: 225px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            color: orange;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .trap{
+            margin-top: 900px;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+        }
+        .buttin{
+            padding: 2%;
+            background-color: orange;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <header>ISMAILA AFEEZ</header>
+        <ul>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#work">Work</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <div class="one">
+                <h1 class="first">Hi,I'M </h1><br><br>
+                <p class="wrt">An aspiring <span>Front-end web Developer <br> and UI/UX Designer.</span></h1>
+                </p>
+                <a href="https://wa.me/+2348067356383" target="blank"><button class="HH">HIRE ME</button></a>
+            </div>
+            <div class="one">
+                <img src="./pr.PNG" class="im2">
+            </div>
+        </div>
+    </section>
+     <section id="about">
+        <div class="container2">
+            <div class="two">
+                <h1 class="tet">ABOUT ME</h1>
+                <p class="para">I'm your trusted Web Developer. With years of experience in the industry, I'm passionate
+                    about helping you find the best keyword research that suits your needs and desire.
+                    we believe in providing exceptional customer service from start to finish.
+                </p>
+            </div>
+            <div class="two">
+                <h1 class="tet">Skills</h1>
+                <li class="para">HTML</li>
+                <li class="para">CSS</li>
+                <li class="para">JAVASCRIPT</li>
+            </div>
+    </section>
+    <section id="service">
+        <div class="container3">
+            <div class="three">
+                <i class="fa-solid fa-code"></i>
+                <h1 class="tt1">WEB DEVELOPMENT</h1>
+            </div>
+            <div class="three">
+                <i class="fa-solid fa-u"></i>
+                <h1 class="tt1">UI/UX DESIGN</h1>
+            </div>
+            <div class="three">
+                <i class="fa-solid fa-leaf"></i>
+                <h1 class="tt1">GRAPHICS AND DESIGN</h1>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <h1 class="tr">WHAT I OFFER</h1>
+        <div class="container4">
+            <div class="four">
+                <div class="for">Business website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+            <div class="four">
+                <div class="for">Personal website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+            <div class="four">
+                <div class="for">Ecommerce website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+            <div class="four">
+                <div class="for">Blog website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container7">
+            <div class="seven"></div>
+            <div class="seven"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="trap"> CONTACT ME</h1>
+        <div class="container5">
+            <div class="five">
+                <form>
+                    <fieldset>
+                        <legend>CONTACT ME</legend>
+                        <label for="First Name">First Name: </label>
+                        <input type="text" style="width: 400px; height: 20px;"><br><br><br>
+                        <label for="last Name">Last Name: </label>
+                        <input type="text" style="width: 400px; height: 20px;"><br><br><br>
+                        <label for="other Name">Other Name: </label>
+                        <input type="text" style="width: 400px; height: 20px;">
+                        <textarea placeholder="Write a message" cols="53" rows="20"></textarea>
+                        <button class="buttin">SEND MESSAGE</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
